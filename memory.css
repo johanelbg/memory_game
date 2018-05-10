@@ -1,0 +1,74 @@
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mainGame{
+  justify-content: center;
+}
+
+#myCounter{
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+
+.container{
+  perspective: 1000px;
+}
+
+.cardDiv{
+  position: relative;
+  margin: 5px;
+  transition: all 0.5s linear;
+  transform-style: preserve-3d;
+  height: 210px;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.frontCard, .backCard{
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.frontCard{
+  background-color: PaleTurquoise ;
+}
+
+.backCard{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.selectCard, .matchCard, .backCard{
+  transform: rotateY(180deg);
+}
+
+.matchCard, .selectCard{
+  pointer-events: none;
+}
+
+.modal-body button{
+  display: block;
+  margin: 3%;
+  width: 40%;
+  transform: translateX(66%);
+}
+
+#easyButton{
+  background-color: green;
+}
+
+#hardButton{
+  background-color: red;
+}
+
+.resetButton{
+  transform: translateX(322%);
+}
